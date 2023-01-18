@@ -70,3 +70,26 @@
     grid-template-columns: repeat(5, 1fr);
   }
 }
+
+@media screen and (min-width: 650px) {
+  /* Kode lainnya disembunyikan  */
+  .movie .movie__title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .movie .movie__overview {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  footer #footerTools {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .app-bar .app-bar__brand h1 {
+    font-size: 2em;
+  }
+}

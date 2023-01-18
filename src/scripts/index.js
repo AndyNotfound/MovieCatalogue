@@ -3,6 +3,10 @@ import "../styles/style.css";
 import "../styles/responsive.css";
 import App from "./views/app";
 import swRegister from "./utils/sw-register";
+import WebsocketInitiator from "./utils/websocket-initiator";
+import FooterToolsInitiator from "./utils/footer-tools-initiator";
+import CONFIG from "./globals/config";
+import { async } from "regenerator-runtime";
 
 const app = new App({
   button: document.querySelector("#hamburgerButton"),
@@ -14,7 +18,13 @@ window.addEventListener("hashchange", () => {
   app.renderPage();
 });
 
-window.addEventListener("load", () => {
+window.addEventListener("load", async () => {
   app.renderPage();
-  swRegister();
+  await swRegister();
+  WebsocketInitiator.init(CONFIG.WEB_SOCKET_SERVER);
+
+  FooterToolsInitiator.init({
+    subscribeButton: document.querySelector("#subscribePushNotification"),
+    unsubscribeButton: document.querySelector("#unsubscribePushNotification"),
+  });
 });
