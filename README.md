@@ -3,7 +3,7 @@ A simple Progressive Web Apps made for Indosat Ooredoo Hutchison Digital Camp "F
 
 NOTE: I staged this project into two different section, this one, and <a href="https://github.com/AndyNotfound/MovieCatalogueTest.git">MovieCatalogueTest</a> check it in accordance.
 
-In this stage, I created the UI layout, routing, components, Service worker, Indexed DB, and etc. The automation test script, CI/CD configuration, and optimization are not included in this stage.
+In this stage, I created the UI layout, routing, components, Service worker, Indexed DB, Web Push Notification, Caching, App Shell, and etc.
 
 <h3>Key Points</h3>
 <details>
@@ -58,8 +58,8 @@ In this stage, I created the UI layout, routing, components, Service worker, Ind
 
 <h3>How to run</h3>
 <ul>
-  <li>Clone this directory by typing <code>git clone https://github.com/AndyNotfound/IDCampFourthExam.git</code>.<br>NOTE: alternatively you can do the ssh version</li>
-  <li>Change your working directory by punching <code>cd IDCampFourthExam</code> on the keyboard, like literally.</li>
+  <li>Clone this directory by typing <code>git clone https://github.com/AndyNotfound/MovieCatalogue.git</code>.<br>NOTE: alternatively you can do the ssh version</li>
+  <li>Change your working directory by punching <code>cd MovieCatalogue</code> on the keyboard, like literally.</li>
   <li>Install all depedencies like how we usually roll <code>npm i</code>. behold, the JavaScript way.<br>NOTE: if you're using <code>yarn</code> or whatever, figure it out, kay?</li>
   <li>Run one of the following commands below, based on your need and goal:<br>
     <ul>
@@ -75,6 +75,6 @@ In this stage, I created the UI layout, routing, components, Service worker, Ind
 <details>
   <summary><samp>click to expand</samp></summary>
 
-  ![image](https://user-images.githubusercontent.com/40969170/222504319-f4b3fe7e-2598-43dd-9480-29e86d8a7e14.png)
+  ![image](https://user-images.githubusercontent.com/40969170/222731784-4a8a5602-779f-423f-918f-12454f954451.png)
 
 </details>
